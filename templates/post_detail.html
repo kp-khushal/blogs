@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="object-entry">
+<h2>{{ object.title }}</h2>
+<p>This is Meta Discrtiption : {{ object.meta_description }}</p>
+<p>{{ object.meta_keyword }}</p>
+<p>{{ object.title_tag }}</p>
+<p>{{ object.content }}</p>
+<p>{{ object.post_date }}</p>
+<p>{{ object.post_time }}</p>
+<p>{{ object.status }}</p>
+</div>
+
+{% endblock content %}

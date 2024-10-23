@@ -1,0 +1,13 @@
+<h1>Search Results</h1>
+
+<ul>
+  {% for s in object_list %}
+    <h1>
+    <li>{{ s.title }}, </br></li>
+    <li>{{ s.content }}, </br></li>
+    <li>{{ s.meta_keyword }}</li>
+    </h1>
+    {% empty %}
+    <h1> No Result Found...</h1>
+  {% endfor %}
+</ul>
